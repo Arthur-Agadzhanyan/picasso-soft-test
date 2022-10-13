@@ -12,7 +12,7 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: 'Autocomplete Input' }}
+          options={{ title: 'Поиск компании' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

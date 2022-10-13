@@ -3,6 +3,7 @@ import {
   NativeSyntheticEvent,
   ScrollView,
   StyleSheet,
+  Text,
   TextInput,
   TextInputChangeEventData,
   View,
@@ -50,6 +51,7 @@ export default function HomeScreen() {
   return (
     <ScrollView style={styles.scroller}>
       <View style={styles.container}>
+        <Text style={styles.text}>Компания</Text>
         <TextInput style={styles.input} onChange={changeHandler}></TextInput>
         {choosedCompanies.length ? (
           <ChoosedList list={choosedCompanies} deleteItem={deleteCompany} />
@@ -73,6 +75,13 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  text:{
+    width: 332,
+    textAlign: "left",
+    marginBottom: 8,
+    color: "#484848",
+    fontSize: 12
   },
   input: {
     position: "relative",
